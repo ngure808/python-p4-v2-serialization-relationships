@@ -45,7 +45,7 @@ def zookeeper_by_id(id):
     return make_response(response_body)
 
 
-@app.route('/enclosure/<int:id>')
+@app.route('/enclosure/<int:id>',)
 def enclosure_by_id(id):
     enclosure = Enclosure.query.filter(Enclosure.id == id).first()
     response_body = f''
